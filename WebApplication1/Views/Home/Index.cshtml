@@ -1,0 +1,64 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <a asp-controller="Home" asp-action="">Pay Now</a>
+</div>
+
+@*<script>
+    $(function (res) {
+
+        alert("test");
+        $.ajax({
+
+            url: 'https://test.payu.in/_payment',
+            method: 'POST',
+            dataType: 'json',
+      
+            crossDomain: true,
+            contentType: "application/json; charset=utf-8",
+            //data: JSON.stringify(data),
+            cache: false,
+    
+            
+            beforeSend: function(request) {
+                request.setRequestHeader("Authorization", "Basic");
+            },
+
+            headers: {
+                "key": "G32Ifn3s",
+                "salt": "5tjMLBmHtB",
+                "hash": "PD1nWbsFNh8zfO7wClGvPSvi4/dck5w9LJtcwDfYnJ0=",
+                "X-Version": "1",
+                "txnid": "1233aa33",
+                "amount": 9.05,
+                "productinfo": "p2",
+                "firstname": "Sinona1",
+                "email": "sinona1@gmail.com",
+                "phone": "+91 9400838732",
+                "surl": "hjhjgjkl11h",
+                "furl":"hkhlkh1kj",
+                'Access-Control-Allow-Origin': 'https://test.payu.in/_payment',
+                 //"Service_provider":"payu_paisa",
+                "contentType": 'application/json; charset=utf-8'
+            },
+          
+             
+            contentType: 'application/json; charset=utf-8',
+            success: function () {
+                alert("success");
+                window.location.href = "https://test.payu.in/_payment";
+             
+            },
+            error: function () {
+             alert("error");
+        }            
+
+        });
+    });
+</script>*@
